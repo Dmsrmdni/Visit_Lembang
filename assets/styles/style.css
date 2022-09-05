@@ -1,0 +1,1012 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+    overflow-x: hidden;
+}
+
+header {
+    display: inline;
+}
+
+.container {
+    width: 91%;
+    margin: 0 auto;
+}
+
+/* Navbar */
+nav {
+    position: sticky;
+    top: 0;
+    box-shadow: 0 2px 3px 0  rgba(0, 0, 0, 0.1);
+}
+
+nav::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+nav h1 {
+    float: left;
+    padding: 15px;
+    font-size: 25px;
+}
+
+nav ul {
+    float: right;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
+}
+
+nav li a:hover{
+    font-weight: bold;
+}
+
+nav li a:hover::after {
+    content: '';
+    display: block;
+    border-bottom:solid #40BB5E;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+}
+
+nav li a {
+    display: inline-block;
+    padding: 18px 15px;
+    font-size: 18px;
+}
+
+.aktif {
+    font-weight: bold;
+}
+
+.aktif::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid #40BB5E;
+    width: 80%;
+    margin: auto;
+    padding-bottom: 3px;
+    margin-bottom: -6px;
+}
+
+#menu-toggle {
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    float: right;
+    margin-top: 20px;
+    position: relative;
+}
+
+#menu-toggle input {
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    left: -6px;
+    top: -3px;
+    opacity: 0;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 3px;
+    transition: all 0.5s;
+}
+/* endNavbar */
+
+/* Jumbotron */
+.jumbutron{
+    background-image: url(../images/lembang.jpg);
+    padding-top: 11.5%;
+    padding-bottom: 11.5%;
+    width: 100%;
+    background-size: cover;
+}
+/* endJumbutron */
+
+
+/* Beranda */
+#beranda h1{
+    font-size: 30px;
+    padding: 50px 0px 20px 0px;
+}
+
+#beranda p {
+    color: #6b6967;
+    font-size: 20px;
+    text-align: justify;
+}
+
+.button {
+    margin-top: 30px;
+    width: 65%;
+    transition: all 0.3s ease;
+}
+
+.button a{
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #22ff6421;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #40BB5E;
+}
+
+.button:hover{
+    padding-left: 5px;
+}
+
+.button a:hover{
+    background-color: #40BB5E;
+    color: white;
+} 
+/* endBeranda */
+
+/* Line */
+.line {
+    display: block;
+    width: 80%;
+    height: 3px;
+    background-color: #6b6967;
+    margin-top: 65px;
+    margin: 85px auto 0px;
+    border-radius: 3px;
+    z-index: -1;
+}
+/* endLine */
+
+/* tentang */
+.judul {
+    text-align: center;
+    margin: 40px 0px 40px 0px;
+}
+
+.fitur {
+    display: flex;
+}
+
+.fitur img {
+    width: 400px;
+}
+
+.pertama {
+    flex-grow: 1;
+}
+
+.kedua {
+    margin-top: 100px;
+    flex-grow: 10;
+}
+
+#tentang .fitur h3 {
+    font-size: 22px;
+}
+
+#tentang .kedua p {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #6b6967;
+    text-align: justify;
+}
+/* endTentang */
+
+/* Daftar Wisata */
+#daftar-wisata a{
+    padding-left: 7px;
+    text-decoration: none;
+    font-size: 15px;
+    display: block;
+    transition: all 0.3s ease;
+    font-weight: 400;
+    color: black;
+}
+
+#daftar-wisata a:hover{
+    font-weight: bold;
+    padding-left: 8px;
+}
+
+#daftar-wisata td{
+    padding-right: 2px;
+    font-weight: 540;
+}
+
+#daftar-wisata h3{
+    text-align: center;
+    font-size: 20.5px;
+    padding: 10px;
+}
+
+#daftar-wisata .flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+#daftar-wisata .flex-column img{
+    width: 100%;
+}
+
+#daftar-wisata .flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-grow: 1;
+}
+
+#daftar-wisata .box {
+    flex-grow: 1;
+    margin: 10px;
+    box-shadow: 0 5px 9px 0  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+#daftar-wisata .box img{
+    border-radius: 5%;
+}
+
+#daftar-wisata .button{
+    width: 30%;
+    transition: all 0.3s ease;
+}
+
+#daftar-wisata .button a{
+    padding: 10px 10px;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    background-color: #22ff6421;
+    color: black;
+    font-weight: 600;
+    font-size: 18px;
+    border: 2px solid #40BB5E;
+}
+
+#daftar-wisata .button:hover{
+    padding-left: 5px;
+}
+
+#daftar-wisata .button a:hover{
+    background-color: #40BB5E;
+    color: white;
+}
+/* endDaftarWisata */
+
+
+/* Lainnya */
+#tim .image {
+    text-align: center;
+}
+
+#tim .tim {
+    width: 260px;
+    height: 200px;
+    margin-left: 2%;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.kanan {
+    float: right;
+    width: 48%;
+    height: 280px;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kanan p {
+    font-size: 19px;
+}
+
+.kanan img {
+    width: 150px;
+    height: 150px;
+}
+
+.kanan a {
+    position: absolute;
+    margin-top: -35px;
+    z-index: -1;
+}
+
+.kiri {
+    float: left;
+    width: 48%;
+    height: 280px;
+    box-shadow: 0 4px 8px 0  rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    padding: 20px;
+}
+
+.kiri .left {
+    float: left;
+    width: 10%;
+}
+
+.kiri img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    float: left;
+}
+
+.kiri .right {
+    float: right;
+    width: 80%;
+}
+
+.kiri .right h3 {
+    margin-bottom: 5px;
+}
+
+.kiri p {
+    font-size: 18px;
+    margin-top: 95px;
+}
+
+#about .flex {
+    display: flex;
+    width: 70%;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+/* endLainnya */
+
+ /* Footer */
+footer {
+    margin-top: 400px;
+    background-color: black;
+}
+
+footer img{
+    width: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+footer .sosmed img{
+    width: 20px;
+}
+
+footer .bottom{
+    margin-top: 20px;
+    padding: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-color: white;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    width: 25%;
+    padding: 0px 15px;
+}
+
+.col h4 {
+    font-size: 18px;
+    margin: 30px 0px;
+    font-weight: 700;
+    color: white;
+}
+
+.col h4::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid  #40BB5E;
+    width: 60%;
+    padding-top: 3px;
+}
+
+.col ul li {
+    margin-bottom: 15px;
+}
+
+.col ul li a {
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.col ul li a:hover {
+    font-weight: 600;
+    padding-left: 8px;
+}
+
+.col ul {
+    list-style: none;
+}
+
+.sosmed a {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    line-height: 50px;
+    background-color: rgba(255, 255, 255, 0.4);
+    margin: 0px 10px 10px 0px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all 0.4s ease;
+}
+
+.sosmed a:hover {
+    background-color: white;
+}
+/* endFooter */
+
+/* Responsive*/
+@media screen and (max-width: 1025px) {
+
+    #beranda .h1 {
+        font-size: 28px;
+    }
+
+    #beranda p {
+        font-size: 18px;
+    }
+    
+    .kanan p {
+        font-size: 18px;
+    }
+
+    .kiri .right {
+        width: 75%;
+    }
+
+    .kanan , .kiri{
+        height: 300px;
+    }
+
+    .kiri p {
+        font-size: 17px;
+    }
+
+    #daftar-wisata a{
+        font-size: 12px;
+    }
+
+    #daftar-wisata td{
+        font-size: 15px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 18.5px;
+    }
+   
+}
+
+@media screen and (max-width: 950px) {
+
+    nav h1 {
+        font-size: 25px;
+    }
+
+    nav ul {
+        width: 30%;
+        display: flex;
+        position: fixed;
+        top: 65px;
+        height: 100vh;
+        bottom: 0;
+        padding: 40px 20px;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: 0 2px 5px 0  rgba(0, 0, 0, 0.1);
+        background-color: white;
+        transform: translateX(100%);
+        transition: all 0.5s;
+    }
+
+    nav ul.toggle {
+        transform: translateX(0);
+    }
+
+    #menu-toggle {
+        display: flex;
+    }
+
+    header .jumbutron img{
+        width: 100%;
+        height: fit-content;
+    }
+
+    #beranda h1 {
+        font-size: 35px;
+    }
+
+    #beranda p {
+        font-size: 25px;
+    }
+
+    #daftar-wisata .button {
+        width: 90%;
+    }
+
+    .line {
+        margin: 50px auto 20px;
+    }
+
+    .fitur {
+        flex-direction: column;
+    }
+
+    #tentang .fitur:nth-child(3) .pertama {
+        order: 1;
+    }
+
+    #tentang .fitur:nth-child(3) .kedua {
+        order: 2;
+    }
+
+    #tentang .fitur:last-child .pertama {
+        order: 1;
+    }
+
+    #tentang .fitur:last-child .kedua {
+        order: 2;
+    }
+
+    .fitur img {
+        width: 100%;
+        height: fit-content;
+    }
+
+    .fitur .kedua {
+        margin-top: 0px;
+    }
+
+    #tentang .fitur h3 {
+        font-size: 26px;
+    }
+
+    #tentang .fitur p {
+        margin-bottom: 20px;
+        font-size: 22px;
+    }
+    
+    #daftar-wisata .flex-row {
+         flex-direction: column;
+    }
+
+    #daftar-wisata td{
+        font-size: 18px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 20.5px;
+    }
+
+    #daftar-wisata a{
+        font-size: 20px;
+    }
+
+    #daftar-wisata .flex-column img{
+        width: 100%;
+    }
+
+    #tim .tim {
+        width: 70%;
+        height: 70%;
+    }
+
+    .kanan, .kiri {
+        width: 100%;
+    }
+
+    .kanan {
+        height: 220px;
+    }
+
+    .kanan {
+        margin-bottom: 20px;
+    }
+
+    .kiri {
+        height: 260px;
+    }
+
+    .kiri .right {
+        width: 85%;
+    }
+
+    .kiri p {
+        font-size: 20px;
+    }
+    
+    footer {
+        margin-top: 650px;
+    }
+
+}
+
+@media screen and (max-width: 850px) {
+
+    nav ul {
+        width: 35%;
+    }
+
+    #beranda h1 {
+        font-size: 30px;
+    }
+
+    #beranda p {
+        font-size: 23px;
+    }
+
+    #tim .tim {
+        width: 400px;
+    }
+
+    .kanan {
+        height: 260px;
+    }
+
+    .kanan p {
+        font-size: 20px;
+    }
+
+    .sosmed {
+        display: flex;
+        flex-direction: row;
+    }
+
+}
+
+@media screen and (max-width: 770px) {
+
+    nav ul {
+        width: 35%;
+    }
+
+    #beranda h1 {
+        font-size: 20px;
+    }
+
+    #beranda p {
+        font-size: 14px;
+    }
+
+    #beranda .button a {
+        font-size: 15px;
+    }
+
+    #tentang .fitur h3 {
+        font-size: 18px;
+    }
+
+    #tentang .fitur p {
+        font-size: 14px;
+    }
+
+    #daftar-wisata td{
+        font-size: 12px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 14px;
+    }
+
+    #daftar-wisata a{
+        font-size: 13px;
+    }
+
+    #daftar-wisata .flex-column img{
+        width: 100%;
+    }
+
+    #tim .tim {
+        width: 350px;
+    }
+
+    .fitur h3 {
+        font-size: 23px;
+    }
+
+    .fitur p {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .kanan , .kiri {
+        height: 250px;
+    }
+
+    .kanan p , .kiri p {
+        font-size: 17px;
+    }
+
+    .kiri .right {
+        width: 80%;
+    }
+
+    .col {
+        width: 30%;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+
+    nav ul {
+        width: 42%;
+    }
+
+    #beranda h1 {
+        font-size: 20px;
+    }
+
+    #beranda p {
+        font-size: 14px;
+    }
+
+    #beranda .button a {
+        font-size: 15px;
+    }
+
+    #tentang .fitur h3 {
+        font-size: 18px;
+    }
+
+    #tentang .fitur p {
+        font-size: 14px;
+    }
+
+    #daftar-wisata td{
+        font-size: 12px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 14px;
+    }
+
+    #daftar-wisata a{
+        font-size: 13px;
+    }
+
+    #daftar-wisata .flex-column img{
+        width: 100%;
+    }
+
+    #tim .tim {
+        width: 350px;
+    }
+
+    .fitur h3 {
+        font-size: 23px;
+    }
+
+    .fitur p {
+        text-align: start;
+        font-size: 17px;
+    }
+
+    .kanan {
+        height: 270px;
+    }
+
+    .kiri {
+        height: 300px;
+    }
+    .kanan p , .kiri p {
+        font-size: 17px;
+    }
+
+    .kanan img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .kiri .right {
+        width: 75%;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .col {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    nav ul {
+        width: 50%;
+    }
+
+    #tentang .fitur h3 {
+        font-size: 18px;
+    }
+
+    #tentang .fitur p {
+        font-size: 14px;
+    }
+
+    #daftar-wisata td{
+        font-size: 12px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 14px;
+    }
+
+    #daftar-wisata a{
+        font-size: 13px;
+    }
+
+    #daftar-wisata .flex-column img{
+        width: 100%;
+    }
+
+    .kanan {
+        height: 250px;
+    }
+
+    .kiri {
+        height: 280px;
+    }
+
+    .kanan p , .kiri p {
+        font-size: 15px;
+    }
+    
+    #tim .tim {
+        width: 350px;
+    }
+
+    footer {
+        margin-top: 660px;
+    }
+
+}
+
+@media screen and (max-width: 395px) {
+
+    nav h1 {
+        font-size: 20px;
+    }
+
+    nav ul {
+        width: 65%;
+    }
+
+    #beranda h1 {
+        font-size: 22px;
+    }
+
+    #beranda p {
+        font-size: 18px;
+    }
+
+    #beranda .button {
+        width: 100%;
+    }
+
+    .judul{
+        font-size: 20px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 14px;
+    }
+
+    #daftar-wisata a{
+        font-size: 13px;
+    }
+
+    #daftar-wisata .flex-column img{
+        width: 100%;
+    }
+
+    .kanan {
+        height: 280px;
+    }
+
+    .kiri {
+        height: 320px;
+    }
+
+    .kiri .right {
+        width: 55%;
+    }
+    .kanan p , .kiri{
+        font-size: 14px;
+    }
+
+    #tim .tim {
+        width: 250px;
+    }
+
+    footer {
+        margin-top: 720px;
+    }
+
+}
+
+@media screen and (max-width: 300px) {
+
+    #beranda h1 {
+        font-size: 20px;
+    }
+
+    #beranda p {
+        font-size: 15px;
+    }
+
+    #tentang .fitur h3 {
+        font-size: 15px;
+    }
+
+    #tentang .fitur p {
+        font-size: 11px;
+    }
+
+    #daftar-wisata td{
+        font-size: 11px;
+    }
+
+    #daftar-wisata h3{
+        font-size: 12px;
+    }
+
+    #daftar-wisata a{
+        font-size: 9px;
+    }
+
+    .kanan {
+        height: 350px;
+    }
+
+    .kiri {
+        height: 370px;
+    }
+
+    .kiri .right {
+        width: 55%;
+    }
+    .kanan p , .kiri{
+        font-size: 14px;
+    }
+
+   footer {
+        margin-top: 850px;
+    }
+
+}
+/* endResponsive*/
